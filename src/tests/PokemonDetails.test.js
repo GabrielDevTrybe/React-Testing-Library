@@ -57,10 +57,10 @@ describe('Teste o componente <PokemonDetails.js />', () => {
       history.push('/pokemons/65');
     });
 
-    const image1 = screen.getByRole('img', { name: /alakazam location/i });
+    const imgAlakazam = screen.getByRole('img', { name: /alakazam location/i });
 
-    expect(image1).toBeInTheDocument();
-    expect(image1).toHaveAttribute('src', 'https://cdn2.bulbagarden.net/upload/4/44/Unova_Accumula_Town_Map.png');
+    expect(imgAlakazam).toBeInTheDocument();
+    expect(imgAlakazam).toHaveAttribute('src', 'https://cdn2.bulbagarden.net/upload/4/44/Unova_Accumula_Town_Map.png');
   });
 
   it('É exibido na tela uma label com o texto Pokémon favoritado?', () => {
